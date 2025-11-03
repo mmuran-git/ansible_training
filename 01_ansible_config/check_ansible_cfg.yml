@@ -1,0 +1,7 @@
+---
+- hosts: 127.0.0.1
+  gather_facts: false
+  tasks:
+    - name: Check location of ansible.cfg configuration file
+      ansible.builtin.debug:
+        msg: "{{ ansible_config_file }}"
