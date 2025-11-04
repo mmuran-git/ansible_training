@@ -1,0 +1,12 @@
+demorack_BA:
+  hosts:
+    host1:
+      ansible_host: XXX
+  vars:  
+    ansible_connection: ansible.netcommon.network_cli
+    ansible_network_os: cisco.ios.ios
+    ansible_user: ansible
+    ansible_password: XXX
+    ansible_become: true
+    ansible_become_method: enable
+    ansible_become_password: XXX

@@ -1,0 +1,10 @@
+---
+- hosts: demorack_BA
+  #gather_facts: false
+  tasks:
+    - name: Check cisco_IOS_device invetory file
+      ansible.builtin.debug:
+        msg: 
+          - "{{ ansible_config_file }}"
+          - "{{ invetory_file }}"
+          - "{{ ansible_facts }}"
